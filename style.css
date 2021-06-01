@@ -1,0 +1,11 @@
+/*
+Theme Name:     school6
+Theme URI:      http://school6.uxp.ru/
+Description:    Дочерняя тема для темы newsever
+Author:         Nemolite (sergey vushnyakov)
+Author URI:     http://vandraren.ru/
+Template:       newsever
+Version:        1.0.0
+*/
+
+@import url("../newsever/style.css");
