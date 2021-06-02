@@ -1,11 +1,11 @@
 /*
 Theme Name:     school6
-Theme URI:      http://school6.uxp.ru/
-Description:    Дочерняя тема для темы newsever
+Theme URI:      http://sosh6-gshum.uxp.ru/
+Description:    Дочерняя тема для темы magazinenp
 Author:         Nemolite (sergey vushnyakov)
 Author URI:     http://vandraren.ru/
-Template:       newsever
+Template:       magazinenp
 Version:        1.0.0
 */
 
-@import url("../newsever/style.css");
+@import url("../magazinenp/style.css");
