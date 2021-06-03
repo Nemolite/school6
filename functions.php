@@ -79,4 +79,10 @@ function school6_website_development() {
 
 	echo wp_kses(apply_filters('magazinenp_footer_copyright_text', $footer_text), $allowed_tags);
 }
+
+/**
+ * Банеры для футера
+ */ 
+require 'inc/footer-baners.php';
+
 ?>
