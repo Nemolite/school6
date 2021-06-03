@@ -10,8 +10,8 @@ class BanersFooterWidget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'footerbaners', 
-			'Банер', 
-			array( 'description' => 'Банеры для footer' ) 
+			'Банер (2x)', 
+			array( 'description' => 'Сдвоенные банеры для footer' ) 
 		);
 	}
  
