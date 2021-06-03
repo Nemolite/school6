@@ -14,6 +14,7 @@ class School6
 
 		add_action('school6_footer', array($this, 'site_content_close'), 10);
 		add_action('school6_footer', array($this, 'related_posts'), 15);
+		add_action('school6_footer', array($this, 'address'), 17);
 		add_action('school6_footer', array($this, 'footer'), 20);
 		add_action('school6_footer', array($this, 'page_html_close'), 25);
 
@@ -44,6 +45,13 @@ class School6
 		//get_template_part('template-parts/footer/footer');
 
         get_template_part('inc/school6','footer');
+
+	}
+
+	public function address()
+	{	
+
+        //get_template_part('inc/address','footer');
 
 	}
 
