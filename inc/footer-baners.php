@@ -18,12 +18,22 @@ class BanersFooterWidget extends WP_Widget {
 
 	public function widget( $args, $footerparam ) {
 		?>
-     <div class="school6-baners-footer">
-		 <a href="<?php echo esc_url($footerparam['url']);?>">
-			 <img src="<?php echo esc_url($footerparam['img']);?>" alt="">
-		 </a>
-	 </div>
-       
+        <div class="row">
+            <div class="col-md-6">
+                <div class="school6-baners-footer">
+		            <a href="<?php echo esc_url($footerparam['url']);?>">
+			            <img src="<?php echo esc_url($footerparam['img']);?>" alt="">
+		            </a>
+	            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="school6-baners-footer">
+		            <a href="<?php echo esc_url($footerparam['url1']);?>">
+			            <img src="<?php echo esc_url($footerparam['img1']);?>" alt="">
+		            </a>
+	            </div>
+            </div>
+        </div>
         <?php
 	}
  
@@ -37,18 +47,36 @@ class BanersFooterWidget extends WP_Widget {
         if ( isset( $footerparam[ 'url' ] ) ) {
 			$url = $footerparam[ 'url' ];
 		}
+
+        if ( isset( $footerparam[ 'img1' ] ) ) {
+			$img1 = $footerparam[ 'img1' ];
+		}
+
+        if ( isset( $footerparam[ 'url1' ] ) ) {
+			$url1 = $footerparam[ 'url1' ];
+		}
 		?>
 
-       
+        <p>Первый банер</p>
         <p>
-			<label for="<?php echo $this->get_field_id( 'img' ); ?>">Ссылка на изображение 130x90 (url)</label> 
+			<label for="<?php echo $this->get_field_id( 'img' ); ?>">Ссылка на изображение (url)</label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'img' ); ?>" name="<?php echo $this->get_field_name( 'img' ); ?>" type="url" value="<?php echo esc_attr( $img ); ?>" />
 		</p>
 
         <p>
 			<label for="<?php echo $this->get_field_id( 'url' ); ?>">Ссылка с банера (url)</label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'url' ); ?>" name="<?php echo $this->get_field_name( 'url' ); ?>" type="url" value="<?php echo esc_attr( $url ); ?>" />
-		</p>		
+		</p>
+        <p>Второй банер</p>
+        <p>
+			<label for="<?php echo $this->get_field_id( 'img1' ); ?>">Ссылка на изображение (url)</label> 
+			<input class="widefat" id="<?php echo $this->get_field_id( 'img1' ); ?>" name="<?php echo $this->get_field_name( 'img1' ); ?>" type="url" value="<?php echo esc_attr( $img1 ); ?>" />
+		</p>
+
+        <p>
+			<label for="<?php echo $this->get_field_id( 'url1' ); ?>">Ссылка с банера (url)</label> 
+			<input class="widefat" id="<?php echo $this->get_field_id( 'url1' ); ?>" name="<?php echo $this->get_field_name( 'url1' ); ?>" type="url" value="<?php echo esc_attr( $url1 ); ?>" />
+		</p>
 		<?php 
 	}
  
@@ -57,6 +85,8 @@ class BanersFooterWidget extends WP_Widget {
 		$footerparam = array();	
         $footerparam['img'] = ( ! empty( $new_instance['img'] ) ) ? strip_tags( $new_instance['img'] ) : '';
         $footerparam['url'] = ( ! empty( $new_instance['url'] ) ) ? strip_tags( $new_instance['url'] ) : '';
+        $footerparam['img1'] = ( ! empty( $new_instance['img1'] ) ) ? strip_tags( $new_instance['img1'] ) : '';
+        $footerparam['url1'] = ( ! empty( $new_instance['url1'] ) ) ? strip_tags( $new_instance['url1'] ) : '';
 		return $footerparam;
 	}
 }
