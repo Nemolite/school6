@@ -85,4 +85,9 @@ function school6_website_development() {
  */ 
 require 'inc/footer-baners.php';
 
+/**
+ * Банеры для футера
+ */ 
+require 'inc/sitebar-baners.php';
+
 ?>
