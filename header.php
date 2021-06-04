@@ -39,7 +39,8 @@
 			if (!$is_disabled) {
 				switch ($header_index) {
 					case "top_header":
-						get_template_part('template-parts/header/top');
+						//get_template_part('template-parts/header/top');
+						get_template_part('inc/top');
 						break;
 					case "mid_header":
 						// get_template_part('template-parts/header/mid');

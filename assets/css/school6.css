@@ -79,3 +79,10 @@
   height: 300px;
   margin-bottom: 60px;
 }
+
+.spec_plagin_block {
+  width: 218px;
+  height: 38px;
+  border: 1px solid #fff;
+  margin-right: -25px;
+}
