@@ -81,8 +81,8 @@
 }
 
 .spec_plagin_block {
-  width: 218px;
+  width: 216px;
   height: 38px;
-  border: 1px solid #fff;
   margin-right: -25px;
+  padding-top: 2px;
 }
