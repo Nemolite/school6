@@ -12,9 +12,9 @@
 .school6-banners-block {
   width: 100%;
   height: 100px;
-  -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+  border: 1px solid #1151d3;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .school6-banners-block-img {
@@ -24,8 +24,9 @@
 }
 
 .school6-banners-block-img img {
-  width: 130px;
+  width: 120px;
   height: 100px;
+  padding: 5px;
 }
 
 .school6-banners-block-text {
@@ -42,6 +43,7 @@
 
 .school6-banners-block-title a {
   color: #1151d3;
+  font-weight: 400;
 }
 
 .school6-banners-block-title a:hover {
