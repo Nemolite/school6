@@ -66,3 +66,16 @@
   height: 350px;
   padding-top: 30px;
 }
+
+.ad_info {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #1151d3;
+  margin-bottom: 40px;
+}
+
+.photo_albom {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 60px;
+}
