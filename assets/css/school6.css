@@ -49,3 +49,20 @@
 .school6-banners-block-title a:hover {
   color: #1151d3;
 }
+
+.block_address_map {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 40px;
+}
+
+.yandex_map {
+  width: 100%;
+  height: 350px;
+}
+
+.address {
+  width: 100%;
+  height: 350px;
+  padding-top: 30px;
+}
