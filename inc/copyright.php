@@ -1,6 +1,6 @@
 <div class="site-info bottom-footer">
 	<div class="container">
-		<div class="row">
+		<div class="row">		
 			<?php
 
 			if ((boolean)magazinenp_get_option('show_social_profile_on_footer')) {

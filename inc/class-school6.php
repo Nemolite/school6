@@ -14,8 +14,8 @@ class School6
 
 		add_action('school6_footer', array($this, 'site_content_close'), 10);
 		add_action('school6_footer', array($this, 'related_posts'), 15);
-		add_action('school6_footer', array($this, 'address'), 17);
-		add_action('school6_footer', array($this, 'footer'), 20);
+		add_action('school6_footer', array($this, 'address_map'), 17);		
+		add_action('school6_footer', array($this, 'footer'), 20);		
 		add_action('school6_footer', array($this, 'page_html_close'), 25);
 
 	}
@@ -48,10 +48,10 @@ class School6
 
 	}
 
-	public function address()
+	public function address_map()
 	{	
 
-        //get_template_part('inc/address','footer');
+       get_template_part('inc/map','footer');
 
 	}
 
