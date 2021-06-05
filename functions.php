@@ -128,4 +128,15 @@ function school6_top_section_info(){
 	);	
 	register_post_type('top_section_info', $args  );
 }
+
+/**
+ * Регистрация меню для раздела документации в сайтбаре
+ */
+
+add_action( 'after_setup_theme', 'school6_register_nav_menu' );
+function school6_register_nav_menu() {	
+
+	register_nav_menu( 'document_sitebar', 'Document Side Bar' );
+
+}
 ?>
